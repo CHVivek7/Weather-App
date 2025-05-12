@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     
@@ -10,7 +12,7 @@
         <h1>Weather App</h1>
 
         <div class="tab-container">
-            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab current-tab" data-userWeather>Your Weather</p>
             <p class="tab" data-searchWeather>Search Weather</p>
         </div>
 
@@ -18,7 +20,7 @@
 
             <!-- grant location container-->
             <div class="sub-container grant-location-container">
-                <img src="https://i.postimg.cc/B6JRXjGw/location.png" width="80" height="80" loading="lazy">
+                <img src="https://i.postimg.cc/B6JRXjGw/location.png" width="80" height="80" loading="lazy" />
                 <p>Grant Location Access</p>
                 <p>Allow Access to get weather Information</p>
                 <button class="btn" data-grantAccess>Grant Access</button>
@@ -26,70 +28,50 @@
 
             <!-- search form -> form-container-->
             <form class="form-container" data-searchForm>
-                <input placeholder="Search for City..." data-searchInput>
+                <input placeholder="Search for City..." data-searchInput />
                 <button class="btn" type="submit">
-                    <img src="https://i.postimg.cc/pTk48PWV/search.png"  width="20" height="20" loading="lazy">
+                    <img src="https://i.postimg.cc/pTk48PWV/search.png"  width="20" height="20" loading="lazy" />
                 </button>
             </form>
 
-            <!--- loading screen container -->
+            <!-- loading screen container -->
             <div class="sub-container loading-container">
-                <img src="https://i.postimg.cc/BQjkLWds/loading.gif" width="150" height="150">
+                <img src="https://i.postimg.cc/BQjkLWds/loading.gif" width="150" height="150" />
                 <p>Loading</p>
             </div>
 
-            
+            <!-- user info container -->
             <div class="sub-container user-info-container">
-
-                
                 <div class="name">
                     <p data-cityName></p>
-                    <img data-countryIcon>
+                    <img data-countryIcon />
                 </div>
-
-                
                 <p data-weatherDesc></p>
-               
-                <img data-weatherIcon>
-                
+                <img data-weatherIcon />
                 <p data-temp></p>
 
-                
                 <div class="parameter-container">
-
-                   
                     <div class="parameter">
-                        <img src="https://i.postimg.cc/VvVhG403/wind.png" >
+                        <img src="https://i.postimg.cc/VvVhG403/wind.png" />
                         <p>windspeed</p>
                         <p data-windspeed></p>
                     </div>
-
-                    
                     <div class="parameter">
-                        <img src="https://i.postimg.cc/1zGLmpbq/humidity.png" >
+                        <img src="https://i.postimg.cc/1zGLmpbq/humidity.png" />
                         <p>humidity</p>
                         <p data-humidity></p>
                     </div>
-
-                   
                     <div class="parameter">
-                        <img src="https://i.postimg.cc/rpXB2hZT/cloud.png" >
+                        <img src="https://i.postimg.cc/rpXB2hZT/cloud.png" />
                         <p>Clouds</p>
                         <p data-cloudiness></p>
                     </div>
-
                 </div>
-
-
             </div>
-
-
 
         </div>
 
-
     </div>
-
 
     <script src="index.js"></script>
 </body>
